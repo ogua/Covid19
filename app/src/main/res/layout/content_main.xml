@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    style="@style/parent.contentLayout">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+            </LinearLayout>
+
+            <TextView
+                android:text="MINISTRY OF HEALTH"
+                style="@style/viewParent.headerText"
+                 />
+
+            <!--Example with RelativeLayout and Gradient Drawable -->
+            <!-- for Recycler view use any of the layout as model-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dataentry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="EnterData"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    gl:start_color="@color/gradientLightGreen"
+                    gl:end_color="@color/themeColor"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub1Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:text="Data Entry" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub1Title"
+                        android:text="Add Patient Information" />
+
+
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--if the second one is used as model for recyclerView, refer:
+            https://appsnipp.com/gradient-layout-for-dynamic-gradients-in-android-without-drawable-library/
+            -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ALLDetails"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:start_color="@color/gradientLightGreen"
+                    gl:end_color="@color/themeColor"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub2Title"
+                        android:text="ALL Data Entered"
+                        style="@style/viewParent.headerText.HomeCardTitle" />
+
+                    <TextView
+                        android:text="View All Data Entered"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub2Title"/>
+
+
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ViewBarcode"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:start_color="@color/gradientLightGreen"
+                    gl:end_color="@color/themeColor"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub3Title"
+                        android:text="Scan Barcode"
+                        style="@style/viewParent.headerText.HomeCardTitle" />
+
+                    <TextView
+                        android:text="Scan Barcode"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub3Title"/>
+
+
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewsuspected"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:start_color="@color/gradientLightGreen"
+                    gl:end_color="@color/themeColor"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub4Title"
+                        android:text="View Suspected Cases"
+                        style="@style/viewParent.headerText.HomeCardTitle" />
+
+                    <TextView
+                        android:text="All Suspected Cases"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub4Title"/>
+
+
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ViewProbable"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:start_color="@color/gradientLightGreen"
+                    gl:end_color="@color/themeColor"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub5Title"
+                        android:text="View Probable Casse"
+                        style="@style/viewParent.headerText.HomeCardTitle" />
+
+                    <TextView
+                        android:text="View Probable Cases"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub5Title"/>
+
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="viewconfirmed"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginTop="10dp">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    gl:start_color="@color/gradientLightGreen"
+                    gl:end_color="@color/themeColor"
+                    gl:orientation="LEFT_RIGHT"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub6Title"
+                        android:text="View All Confirmed Cases"
+                        style="@style/viewParent.headerText.HomeCardTitle" />
+
+                    <TextView
+                        android:text="View Confirm Cases"
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub6Title"/>
+
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

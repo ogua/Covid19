@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/register_bk_color"
+    android:layout_height="match_parent"
+    tools:context=".Form3Activity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/register_bk_color"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:id="@+id/screenview"
+        android:layout_above="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/register_bk_color"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    style="@style/viewParent.headerText.NoMode"
+                    android:text="Section 2 Patient Clinical Nurse"/>
+            </RelativeLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/logo2"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"/>
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <EditText
+                            android:id="@+id/poffsetsym"
+                            style="@style/modifiedEditText"
+                            android:textSize="15dp"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:hint="Date of Offset Symptoms"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <Spinner
+                            android:id="@+id/psymton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/offsetsym" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="1dp"
+                        android:background="@color/register_bk_color"
+                        android:layout_weight="3"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <EditText
+                            android:id="@+id/pdatefseen"
+                            style="@style/modifiedEditText"
+                            android:textSize="15dp"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:hint="Date First Seen"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <Spinner
+                            android:id="@+id/padmission"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/admission" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="1dp"
+                        android:background="@color/register_bk_color"
+                        android:layout_weight="3"/>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <EditText
+                            android:id="@+id/firstdate"
+                            style="@style/modifiedEditText"
+                            android:textSize="15dp"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:hint="First Date Of Admission To Hospital"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <EditText
+                            android:id="@+id/hosname"
+                            style="@style/modifiedEditText"
+                            android:textSize="15dp"
+                            android:maxLines="1"
+                            android:hint="Name Of Hospital"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <EditText
+                            android:id="@+id/hosnum"
+                            style="@style/modifiedEditText"
+                            android:textSize="15dp"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:hint="Hospital Registration Number"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin">
+                        <EditText
+                            android:id="@+id/dateisolat"
+                            style="@style/modifiedEditText"
+                            android:textSize="15dp"
+                            android:inputType="date"
+                            android:maxLines="1"
+                            android:hint="Date of Isolatiion"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="90dp"
+                        android:orientation="horizontal">
+
+
+                        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                            android:id="@+id/cirRegisterButton"
+                            style="@style/loginButton"
+                            app:spinning_bar_width="4dp"
+                            app:spinning_bar_color="#FFF"
+                            android:text="Skip Form"
+                            android:onClick="skipfomr"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/loginViewsMargin"
+                            app:initialCornerAngle="27dp"
+                            android:layout_marginRight="20dp"
+                            app:spinning_bar_padding="6dp"/>
+
+
+                        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                            android:id="@+id/cirRegisterButto"
+                            style="@style/loginButton"
+                            app:spinning_bar_width="4dp"
+                            app:spinning_bar_color="#FFF"
+                            android:text="Save and Contimnue"
+                            android:onClick="SaveandContinue"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/loginViewsMargin"
+                            app:initialCornerAngle="27dp"
+                            app:spinning_bar_padding="6dp"/>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

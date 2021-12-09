@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:ignore="NamespaceTypo">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:minHeight="100dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewSub2Title"
+            style="@style/viewParent.headerText.HomeCardTitles"
+            android:text="Name"
+            gl:layout_constraintStart_toStartOf="parent"
+            gl:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/viewParent.headerText.contentTexts"
+            android:layout_below="@id/textViewSub2Title"
+            android:text="Status"
+            gl:layout_constraintStart_toStartOf="@+id/textViewSub2Title"
+            gl:layout_constraintTop_toBottomOf="@+id/textViewSub2Title" />
+
+
+        <TextView
+            android:id="@+id/date_joined"
+            style="@style/viewParent.headerText.contentTexts"
+            android:layout_toRightOf="@id/status"
+            android:layout_marginLeft="10dp"
+            android:text="Date Reported"
+            gl:layout_constraintStart_toEndOf="@+id/status"
+            gl:layout_constraintTop_toBottomOf="@+id/textViewSub2Title" />
+
+
+        <TextView
+            android:id="@+id/date_joine"
+            style="@style/viewParent.headerText.contentTexts"
+            android:layout_toRightOf="@id/status"
+            android:text="Added On 02-06-1992"
+            gl:layout_constraintStart_toStartOf="@+id/status"
+            gl:layout_constraintTop_toBottomOf="@+id/status" />
+
+
+        <ImageView
+            style="@style/homeCardImage"
+            android:maxHeight="90dp"
+            android:src="@drawable/user"
+            gl:layout_constraintBottom_toBottomOf="@+id/date_joine"
+            gl:layout_constraintEnd_toEndOf="parent"
+            gl:layout_constraintTop_toTopOf="@+id/textViewSub2Title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

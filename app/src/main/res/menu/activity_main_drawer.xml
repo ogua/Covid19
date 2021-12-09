@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Data Entry" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="View All Data" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_user"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_password"
+            android:icon="@drawable/ic_vpn_key_black_24dp"
+            android:title="Reset Password" />
+
+    </group>
+
+    <item android:title="Only Toggle Theme would work">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>

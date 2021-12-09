@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".PateintDetailsActivity"
+    tools:showIn="@layout/activity_pateint_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            style="@style/headerText"
+            android:text="Pateint Info"
+            android:layout_marginBottom="20dp"/>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/nameImageView"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:id="@+id/eipnumber"
+                android:text="EPID Number"
+                android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/epidnum"
+                android:text=""
+                android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/mobileImageView"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="WHO CASE ID"
+                android:layout_toRightOf="@id/mobileImageView"
+                style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                android:id="@+id/caseid"
+                android:layout_toRightOf="@id/mobileImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/emailImageView"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Date Reported"
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/repdate"
+                android:text=""
+                android:layout_toRightOf="@id/emailImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/addressImageView"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Reporting Institution"
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/repinst"
+                android:text=""
+                android:layout_toRightOf="@id/addressImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/dobImageView"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Reporting Country"
+                android:layout_toRightOf="@id/dobImageView"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/repcountry"
+                android:text=""
+                android:layout_toRightOf="@id/dobImageView"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/caseci"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Case Clasification"
+                android:layout_toRightOf="@id/caseci"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/casecl"
+                android:text=""
+                android:layout_toRightOf="@id/caseci"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/detpi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Detected At Point Of Entry"
+                android:layout_toRightOf="@id/detpi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/detpoint"
+                android:text=""
+                android:layout_toRightOf="@id/detpi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            style="@style/headerText"
+            android:text="Section 1 Patient Information"
+            android:layout_marginBottom="20dp"/>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/name"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Name Of Patient"
+                android:layout_toRightOf="@id/name"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/pname"
+                android:text=""
+                android:layout_toRightOf="@id/name"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/fni"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Phone Number"
+                android:layout_toRightOf="@id/fni"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/phonenu"
+                android:text=""
+                android:layout_toRightOf="@id/fni"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/dofi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Date Of Birth"
+                android:layout_toRightOf="@id/dofi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/dateofbir"
+                android:text=""
+                android:layout_toRightOf="@id/dofi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/ageimg"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Age"
+                android:layout_toRightOf="@id/ageimg"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/page"
+                android:text=""
+                android:layout_toRightOf="@id/ageimg"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/gendi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Gender"
+                android:layout_toRightOf="@id/gendi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:text=""
+                android:layout_toRightOf="@id/gendi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/admli"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Region"
+                android:layout_toRightOf="@id/admli"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/adminlreg"
+                android:text=""
+                android:layout_toRightOf="@id/admli"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/admldi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="District"
+                android:layout_toRightOf="@id/admldi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/admindis"
+                android:text=""
+                android:layout_toRightOf="@id/admldi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/recoi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Residence Country"
+                android:layout_toRightOf="@id/recoi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/rescountry"
+                android:text=""
+                android:layout_toRightOf="@id/recoi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/reccnad1"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Admin Level 1"
+                android:layout_toRightOf="@id/reccnad1"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/admirel"
+                android:text=""
+                android:layout_toRightOf="@id/reccnad1"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/admnl2"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Admin Level 2"
+                android:layout_toRightOf="@id/admnl2"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/adminll2"
+                android:text=""
+                android:layout_toRightOf="@id/admnl2"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/diagni"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Diagnose Country"
+                android:layout_toRightOf="@id/diagni"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/diacunty"
+                android:text=""
+                android:layout_toRightOf="@id/diagni"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            style="@style/headerText"
+            android:text="Section 2 Clinical Information"
+            android:layout_marginBottom="20dp"/>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/oosetimg"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Date of onset of symptoms"
+                android:layout_toRightOf="@id/oosetimg"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/oosetimgv"
+                android:text=""
+                android:layout_toRightOf="@id/oosetimg"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/ofsim"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Offset Sympton"
+                android:layout_toRightOf="@id/ofsim"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/ofsimv"
+                android:text=""
+                android:layout_toRightOf="@id/ofsim"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/datfsi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Date First Seen"
+                android:layout_toRightOf="@id/datfsi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/datfsiv"
+                android:text=""
+                android:layout_toRightOf="@id/datfsi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/admin"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Admission To Hospital"
+                android:layout_toRightOf="@id/admin"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/adminv"
+                android:text=""
+                android:layout_toRightOf="@id/admin"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/firdatei"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="First Date To Hospital"
+                android:layout_toRightOf="@id/firdatei"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/firdateiv"
+                android:text=""
+                android:layout_toRightOf="@id/firdatei"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/namehosi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Name Of Hospital"
+                android:layout_toRightOf="@id/namehosi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/namehosiv"
+                android:text=""
+                android:layout_toRightOf="@id/namehosi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/hosrenu"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Hospital Registration Number"
+                android:layout_toRightOf="@id/hosrenu"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/hosrenuv"
+                android:text=""
+                android:layout_toRightOf="@id/hosrenu"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/dateism"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Date of isolation"
+                android:layout_toRightOf="@id/dateism"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/dateismv"
+                android:text=""
+                android:layout_toRightOf="@id/dateism"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            style="@style/headerText"
+            android:text="Section 1 Patient Information"
+            android:layout_marginBottom="20dp"/>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/patvi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text=" Was the patient ventilated"
+                android:layout_toRightOf="@id/patvi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/patviv"
+                android:text=""
+                android:layout_toRightOf="@id/patvi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/healsati"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Health status at time of reporting"
+                android:layout_toRightOf="@id/healsati"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/healsativ"
+                android:text=""
+                android:layout_toRightOf="@id/healsati"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/daetoddi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Date of death"
+                android:layout_toRightOf="@id/daetoddi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/daetoddiv"
+                android:text=""
+                android:layout_toRightOf="@id/daetoddi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/patsyi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Patient symptoms"
+                android:layout_toRightOf="@id/patsyi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/patsyiv"
+                android:text=""
+                android:layout_toRightOf="@id/patsyi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/Paini"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Pain"
+                android:layout_toRightOf="@id/Paini"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/Painiv"
+                android:text=""
+                android:layout_toRightOf="@id/Paini"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/pattemi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Patient Temperature"
+                android:layout_toRightOf="@id/pattemi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/pattemiv"
+                android:text=""
+                android:layout_toRightOf="@id/pattemi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/patsiim"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Patient signs"
+                android:layout_toRightOf="@id/patsiim"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/patsiimv"
+                android:text=""
+                android:layout_toRightOf="@id/patsiim"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/udlci"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Underlying conditions"
+                android:layout_toRightOf="@id/udlci"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/udlciv"
+                android:text=""
+                android:layout_toRightOf="@id/udlci"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            style="@style/headerText"
+            android:text="Section 3 Exposure and travel information "
+            android:layout_marginBottom="20dp"/>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/occimg"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Occupation"
+                android:layout_toRightOf="@id/occimg"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/occimgv"
+                android:text=""
+                android:layout_toRightOf="@id/occimg"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/trwintin"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Travelled Within 14days"
+                android:layout_toRightOf="@id/trwintin"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/trwintinv"
+                android:text=""
+                android:layout_toRightOf="@id/trwintin"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/coutnci"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Countries and City If Yes"
+                android:layout_toRightOf="@id/coutnci"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/coutnciv"
+                android:text=""
+                android:layout_toRightOf="@id/coutnci"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/healpi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Visited Health Facility Prio Symptons"
+                android:layout_toRightOf="@id/healpi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/healpiv"
+                android:text=""
+                android:layout_toRightOf="@id/healpi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/clocoi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Had any Close Contact"
+                android:layout_toRightOf="@id/clocoi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/clocoiv"
+                android:text=""
+                android:layout_toRightOf="@id/clocoi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/contifi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Contact Setting If Yes"
+                android:layout_toRightOf="@id/contifi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/contifiv"
+                android:text=""
+                android:layout_toRightOf="@id/contifi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/confimi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Had Contact With Probable or Confirmed Case"
+                android:layout_toRightOf="@id/confimi"
+                android:layout_marginBottom="40dp"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/confimiv"
+                android:text=""
+                android:layout_toRightOf="@id/confimi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/uniqi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Unique Cases"
+                android:layout_toRightOf="@id/uniqi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/uniqiv"
+                android:text=""
+                android:layout_toRightOf="@id/uniqi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/conati"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Contact Setting if Yes"
+                android:layout_toRightOf="@id/conati"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/conativ"
+                android:text=""
+                android:layout_toRightOf="@id/conati"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/locifyi"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Location for Exposure if Yes"
+                android:layout_toRightOf="@id/locifyi"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/locifyiv"
+                android:text=""
+                android:layout_toRightOf="@id/locifyi"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <ImageView
+                android:id="@+id/viliani"
+                android:src="@drawable/ic_lens_black_24dp"
+                style="@style/profileDetailsImage" />
+
+            <TextView
+                android:text="Visited Live Animal In 14 Days Prior Infection"
+                android:layout_toRightOf="@id/viliani"
+                android:layout_marginBottom="20dp"
+                style="@style/profileDetailsTextMain" />
+
+            <TextView
+                android:id="@+id/vilianiv"
+                android:text=""
+                android:layout_toRightOf="@id/viliani"
+                style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="sharecode"
+                android:text="Share Barcode"
+                android:background="@color/profilePrimaryDark"
+                />
+        </RelativeLayout>
+
+
+
+        <View style="@style/proifleDetailsView" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

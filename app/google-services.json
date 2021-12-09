@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "87760680944",
+    "project_id": "ogusesitsolutions-37b33",
+    "storage_bucket": "ogusesitsolutions-37b33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87760680944:android:15e0569481d57e26df4f35",
+        "android_client_info": {
+          "package_name": "com.moi.gov.gh.convic_19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87760680944-o13u8eojr0g0b3c9p2sop2dg133d5a1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjwpx4D-PSaDaVstl5QbIl1wiWDKcCU6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87760680944-o13u8eojr0g0b3c9p2sop2dg133d5a1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
